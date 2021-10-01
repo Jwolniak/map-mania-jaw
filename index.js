@@ -8,7 +8,7 @@ function initMap() {
 
     var marker = new google.maps.Marker({position:{lat:18.4563,lng:-77.3267}, map:map});
 
-    var marker2 = new google.maps.Marker({position:{lat:45.6366,lng:-89.4121}, map:maps});
+    var marker2 = new google.maps.Marker({position:{lat:45.6366,lng:-89.4121}, map:map});
     marker2.setIcon('https://maps.google.com/mapfiles/kml/shapes/info-i_maps.png');
 
     var infoWindow = new google.maps.InfoWindow({content:'Rhinelander, WI'});
