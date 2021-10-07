@@ -1,7 +1,11 @@
 var myMap;
-var loc1 = new LatLng(45.6366, -89.4121);
+var loc1 = new zgoogle.maps.LatLng(45.6366, -89.4121);
 function initApplication() {
-    console.log("Starting Map Mania!");
+    console.log("Welcome to Map Mania!");
+}
+
+function LatLng(lat, lng){
+
 }
 function initMap() {
     myMap = new google.maps.Map(document.getElementById("mapID"), {
@@ -26,10 +30,10 @@ function initMap() {
 
 function updateGame() {
     console.log('function UpdateGame()');
-    var zoomLevel = map.getZoom();
+    var zoomLevel = myMap.getZoom();
     var inBounds= false;
 
-    if (myMap.getBounds.contains(marker)) {
+    if (myMap.getBounds.contains(loc1)) {
         inBounds = true;
         console.log("inbounds:"+inBounds+" zoomLevel:"+zoomLevel);
     }
