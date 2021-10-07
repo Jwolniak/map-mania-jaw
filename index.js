@@ -3,10 +3,6 @@ var myMap;
 function initApplication() {
     console.log("Welcome to Map Mania!");
 }
-
-//function LatLng(lat, lng){
-
-//}
 function initMap() {
     myMap = new google.maps.Map(document.getElementById("mapID"), {
         center: {lat: 41.605, lng: -88.081},
@@ -32,8 +28,8 @@ function updateGame() {
     console.log('function UpdateGame()');
     var zoomLevel = myMap.getZoom();
     var inBounds= false;
-    var loc1 = new google.maps.LatLng();
-    if (myMap.getBounds().contains({position:{lat:45.6366, lng:-89.4121}})) {
+    var loc1 = new google.maps.LatLng(45.6366, -89.4121);
+    if (myMap.getBounds().contains(loc1)) {
         inBounds = true;
     }
     console.log("inbounds:"+inBounds+" zoomLevel:"+zoomLevel);
