@@ -16,7 +16,7 @@ function initMap() {
         infoWindow.open(myMap, marker2);
     });
 
-    google.maps.event.addListener(map, 'idle', function() {
+    google.maps.event.addListener(myMap, 'idle', function() {
         updateGame()
     });
 }
@@ -26,7 +26,7 @@ function updateGame() {
     var zoomLevel = map.getZoom();
     var inBounds= false;
 
-    if (map.getBounds.contains(loc1)) {
+    if (myMap.getBounds.contains(loc1)) {
         inBounds = true;
         console.log("inbounds:"+inBounds+" zoomLevel:"+zoomLevel);
     }
