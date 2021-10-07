@@ -33,7 +33,7 @@ function updateGame() {
     var zoomLevel = myMap.getZoom();
     var inBounds= false;
 
-    if (myMap.getBounds.contains(loc1)) {
+    if (map.getBounds.contains(loc1)) {
         inBounds = true;
         console.log("inbounds:"+inBounds+" zoomLevel:"+zoomLevel);
     }
