@@ -1,5 +1,5 @@
 var myMap;
-var loc1 = new zgoogle.maps.LatLng(45.6366, -89.4121);
+var loc1 = new google.maps.LatLng(45.6366, -89.4121);
 function initApplication() {
     console.log("Welcome to Map Mania!");
 }
