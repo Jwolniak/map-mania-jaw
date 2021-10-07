@@ -32,8 +32,8 @@ function updateGame() {
     console.log('function UpdateGame()');
     var zoomLevel = myMap.getZoom();
     var inBounds= false;
-    var loc1 = new google.maps.LatLng(45.6366, -89.4121);
-    if (myMap.getBounds.contains(loc1)) {
+    var loc1 = new google.maps.LatLng();
+    if (myMap.getBounds.contains({position:{lat:45.6366, lng:-89.4121}})) {
         inBounds = true;
     }
     console.log("inbounds:"+inBounds+" zoomLevel:"+zoomLevel);
