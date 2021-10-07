@@ -4,7 +4,7 @@ function initApplication() {
     console.log("Welcome to Map Mania!");
 }
 function initMap() {
-    myMap = new google.maps.Map(document.getElementById("mapID"), {
+    myMap = new google.maps.Map(document.getElementById("myMapID"), {
         center: {lat: 41.605, lng: -88.081},
         zoom: 4,
     });
