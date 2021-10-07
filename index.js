@@ -1,5 +1,5 @@
 var myMap;
-
+var loc1 = new LatLng(45.6366, -89.4121);
 function initMap() {
     myMap = new google.maps.Map(document.getElementById("mapID"), {
         center: {lat: 41.605, lng: -88.081},
@@ -26,7 +26,7 @@ function updateGame() {
     var zoomLevel = map.getZoom();
     var inBounds= false;
 
-    if (map.getBounds.contains({lat:18.4563,lng:-77.3267})) {
+    if (map.getBounds.contains(loc1)) {
         inBounds = true;
     }
 
